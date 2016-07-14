@@ -29,10 +29,10 @@ RUN \
 
 # Download AirVideoHD
 RUN wget -O /AirVideoServerHD-2.2.0.tar.bz2 "https://s3.amazonaws.com/AirVideoHD/Download/AirVideoServerHD-2.2.0.tar.bz2"
-
+RUN wget -O /AirVideoServerHD-2.2.3.tar.bz2 "https://s3.amazonaws.com/AirVideoHD/Download/AirVideoServerHD-2.2.3.tar.bz2"
 # Decompress AirVideoHD
 RUN tar jxf /AirVideoServerHD-2.2.0.tar.bz2
-
+RUN tar jxf /AirVideoServerHD-2.2.3.tar.bz2
 # Copy default 
 COPY server.properties /server.properties.new
 
